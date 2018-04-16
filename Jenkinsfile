@@ -8,6 +8,6 @@ node {
     }
     
     stage('Docker-Compose') {
-       sh 'ssh jenkins@mithras743 < docker-compose up -d'
+       sh 'ssh jenkins@mithras743 "cd /home/jenkins/agilion && docker-compose up -d"'
     }
 }
