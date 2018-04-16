@@ -4,7 +4,7 @@ node {
     }
 
     stage('Copy Docker-Compose') {
-      sh 'scp Docker-Compose.yaml jenkins@mithras743:/home/jenkins'
+      sh 'scp docker-compose.yml jenkins@mithras743:/home/jenkins/agilion/'
     }
     
     stage('Docker-Compose') {
